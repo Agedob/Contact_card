@@ -2,3 +2,32 @@
     margin: 0px;
     padding: 0px;
 }
+
+.body, .cards{
+    display: inline-block;
+    width: 45%;
+    margin: 10px;
+    padding: 10px;
+    border: 1px;
+    border-color: blueviolet;
+    border-style: solid;
+}
+
+textarea{
+    height: 100px;
+    margin: 5px 10px;
+}
+
+p{
+    padding: 5px;
+}
+
+.sub{
+    display: block;
+    margin: 0 auto;
+}
+
+.back{
+    display: none;
+}
+
