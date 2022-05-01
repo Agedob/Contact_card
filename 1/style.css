@@ -1,0 +1,29 @@
+* {
+    margin: 0 auto;
+    background-color: rgb( 69 69 69);
+    color: #FFF;
+    vertical-align: top;
+    border: 1px solid green;
+    text-align: center;
+}
+#container {
+    display: flex;
+    height: 30rem;
+    width: 80%;
+}
+#main_form{
+    margin: auto;
+    background-color: black;
+}
+#contact_container {
+    margin: auto;
+    background-color: royalblue;
+    width: 10%;
+    height: 20%;
+}
+#contact_form{
+    
+}
+input[type='text']{
+    display: block;
+}
