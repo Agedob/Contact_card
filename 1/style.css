@@ -13,7 +13,8 @@
 }
 #main_form{
     margin: auto;
-    background-color: black;
+    background-color: rgb(141, 0, 0);
+    padding: 20px;
 }
 #contact_container {
     margin: auto;
@@ -22,8 +23,10 @@
     height: 20%;
 }
 #contact_form{
-    
+    background-color: black;
 }
-input[type='text']{
+.inputs{
     display: block;
+    margin: 10px auto;
+    padding: 10px;
 }
