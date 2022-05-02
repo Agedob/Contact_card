@@ -8,5 +8,5 @@ You are going to design a contact card page.
 NOTE: we recommend using $(document).on("click", ".btn") for this assignment as opposed to $(".btn").click()
 
     Improvements
-    1) abc cards
-    2) reset form
+    1) alphabetize by last name (Done!!!)
+    2) reset form (Done!!!!)

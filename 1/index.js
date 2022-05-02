@@ -31,18 +31,19 @@ $(document).ready(function(){
         //     return f;
 
 
-    // for (var i = 0; i < con_list.length; i++){
-    //     console.log(con_list[i]);
+        function SortArray(x, y){
+            if (x.last_name < y.last_name) {return -1;}
+            if (x.last_name > y.last_name) {return 1;}
+            return 0;
+        }
+        var abc = con_list.sort(SortArray);
+        console.log(abc);
 
-    // }
+        // $("#contact_list").append()
 
-    function SortArray(x, y){
-        if (x.last_name < y.last_name) {return -1;}
-        if (x.last_name > y.last_name) {return 1;}
-        return 0;
-    }
-    var abc = con_list.sort(SortArray);
-    console.log(abc);
+        var form_temp = $('#main_form').html()
+        // console.log(form_temp)
+        $('#main_form').html(form_temp)
 
         return abc;
     });
