@@ -11,7 +11,7 @@ $(document).ready(function(){
         var f = $('#first_name').val();
         var l = $('#last_name').val();
         var d = $('#description').val();
-        $('.cards').append('<div class="card"> <h1>' + f + l + '</h1> <p class="back" altclass="back">' + d + '</p></div>');
+        $('.cards').append('<div class="card"> <h1>' + f + " " + l + '</h1> <p class="back" altclass="back">' + d + '</p></div>');
         return false;
     });
     $('.cards').on('click', '.card', function(){
