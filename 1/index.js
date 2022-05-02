@@ -3,6 +3,8 @@ $(document).ready(function(){
 
     $(document).on("click", ':button', function(){
 
+        $('#contact_container').css('display', 'flex')
+
         // console.log('hello');
         // console.log($('input[name="F_Name"').val(), $('input[name="L_Name"').val());
         // console.log($().val())
@@ -36,19 +38,24 @@ $(document).ready(function(){
             if (x.last_name > y.last_name) {return 1;}
             return 0;
         }
-        var abc = con_list.sort(SortArray);
-        console.log(abc);
+        con_list.sort(SortArray);
+        console.log(con_list)
+        
+        $('#contact_list').html('<div id="contact_list"></div>');
 
-        for (var i = 0; i < abc.length; i++){
-            console.log(abc[i]);
-            $("#contact_list").append("<p class='contact_card'>" + abc[i].first_name + "</p>");
-
+        for (var i = 0; i < con_list.length; i++){
+            console.log(con_list[i]);
+            $("#contact_list").append("<p class='contact_card_face'> First: " + 
+            con_list[i].first_name + "</br>Last: "  + con_list[i].last_name +  
+            "</p>" + "<p class='contact_card_back'> Email: " + con_list[i].email +  "</br>Phone: " + con_list[i].phone + "</p>");
         }
 
         var form_temp = $('#main_form').html()
         // console.log(form_temp)
         $('#main_form').html(form_temp)
+        
 
-        return abc;
+        return con_list;
     });
+    // make function to display other info outside of the click use $(this)
 })
