@@ -1,19 +1,17 @@
 $(document).ready(function(){
-    var contact_list_holder = []
-    var f = []
+    var con_list = []
+
     $(document).on("click", ':button', function(){
+
         // console.log('hello');
         // console.log($('input[name="F_Name"').val(), $('input[name="L_Name"').val());
         // console.log($().val())
-        var f = $('input[name="F_Name"').val();
-        var l = $('input[name="L_Name"').val();
-        var e = $('input[name="Email"').val();
-        var p = $('input[name="Phone"').val();
-        var temp = {first_name : f, last_name: l, email: e, phone: p}
-        console.log(temp)
-        contact_list_holder.push(temp)
-        console.log(contact_list_holder)
-        return contact_list_holder
+
+        var temp = {first_name : $('input[name="F_Name"').val(), last_name: $('input[name="L_Name"').val(), email: $('input[name="Email"').val(), phone: $('input[name="Phone"').val()}
+        // console.log(temp)
+        con_list.push(temp)
+        // console.log(contact_list_holder)
+        
 
         // console.log($('#main_form').html()) // reset + .attr('input["name"]' , valuse)
        
@@ -31,6 +29,21 @@ $(document).ready(function(){
         //     });
         //     console.log(f)
         //     return f;
-           
+
+
+    // for (var i = 0; i < con_list.length; i++){
+    //     console.log(con_list[i]);
+
+    // }
+
+    function SortArray(x, y){
+        if (x.last_name < y.last_name) {return -1;}
+        if (x.last_name > y.last_name) {return 1;}
+        return 0;
+    }
+    var abc = con_list.sort(SortArray);
+    console.log(abc);
+
+        return abc;
     });
 })
