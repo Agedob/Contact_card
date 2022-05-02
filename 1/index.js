@@ -39,7 +39,11 @@ $(document).ready(function(){
         var abc = con_list.sort(SortArray);
         console.log(abc);
 
-        // $("#contact_list").append()
+        for (var i = 0; i < abc.length; i++){
+            console.log(abc[i]);
+            $("#contact_list").append("<p class='contact_card'>" + abc[i].first_name + "</p>");
+
+        }
 
         var form_temp = $('#main_form').html()
         // console.log(form_temp)
