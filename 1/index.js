@@ -1,7 +1,7 @@
 $(document).ready(function(){
     var contact_list_holder = []
     var f = []
-    $(document).on("click", ':button', function(){
+    $(document).on("click", ':button', function(f){
         // console.log('hello');
         // console.log($('input[name="F_Name"').val(), $('input[name="L_Name"').val());
         // console.log($().val())
@@ -17,9 +17,12 @@ $(document).ready(function(){
 
         // console.log($('#main_form').html()) // reset + .attr('input["name"]' , valuse)
        
-        var f = $(':input').attr("value", " ")
-        console.log(f)
-        return (f)
-    })
+        // f = $(':input').attr("value", " ");
+        // console.log(f);
+        // return f;
+        $( "input" ).map(function() {
+             console.log($( this ).val())
+            });
+    });
 
 })
