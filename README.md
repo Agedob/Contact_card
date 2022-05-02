@@ -6,3 +6,7 @@ You are going to design a contact card page.
     Remember, the content you are making is dynamic, so be sure to attach your handlers appropriately.
 
 NOTE: we recommend using $(document).on("click", ".btn") for this assignment as opposed to $(".btn").click()
+
+    Improvements
+    1) alphabetize by last name (Done!!!)
+    2) reset form (Done!!!!)
